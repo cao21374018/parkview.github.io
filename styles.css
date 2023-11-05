@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+select {
+    padding: 5px;
+}
+
+#parking-lot-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slot {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.occupied {
+    background-color: red;
+    color: white;
+}
+
+.vacant {
+    background-color: green;
+    color: white;
+}

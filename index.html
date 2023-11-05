@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>停车场查询</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>停车场查询</h1>
+
+  <div>
+    <label for="parking-lot-select">选择停车场：</label>
+    <select id="parking-lot-select">
+      <option value="国实地下停车场">国实地下停车场</option>
+      <option value="蓝球场停车场">蓝球场停车场</option>
+      <option value="实验楼停车场">实验楼停车场</option>
+      <!-- 添加更多停车场选项 -->
+    </select>
+    <button onclick="queryParkingLot()">查询</button>
+  </div>
+
+  <div id="parking-lot-grid">
+    <!-- 停车位网格将在JavaScript中动态生成 -->
+  </div>
+
+  <label for="license-input">输入车牌号码：</label>
+  <input type="text" id="license-input">
+  <button onclick="queryLocationByLicense()">查询车辆位置</button>
+  <p id="location-result"></p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
